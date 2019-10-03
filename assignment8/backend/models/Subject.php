@@ -12,5 +12,11 @@ class Subject extends \common\models\Subject
          BlameableBehavior::class
       ];
    }
+   public function rules(){
+      return [
+         ['name','required','message'=>'please fill data '],
+         ['name','email']
+      ];
+   }
 }
    ?>
